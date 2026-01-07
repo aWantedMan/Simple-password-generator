@@ -49,7 +49,7 @@ This repository serves as a portfolio project to demonstrate:
 - Code structuring and maintainability
 - Security-related reasoning
 - Ability to iterate on a project over time
-- 
+  
 ## Versions
 
 This project is versioned using Git tags.
