@@ -1,10 +1,10 @@
 import random
 import string
+#v0.3
 
 
-
-def random_generation(longueur_mdp):
-
+def random_generation(longueur_mdp: int)->str:
+  """Public API: generates a random password according to the lenght in parameter"""
 
 
 
@@ -14,13 +14,13 @@ def random_generation(longueur_mdp):
 
   mdp = []
 
-  def selection_majuscule():
+  def _selection_majuscule():
       mdp.append(alphabet_majuscule[random.randint(0,25)])
 
-  def selection_minuscule():
+  def _selection_minuscule():
       mdp.append(alphabet_minuscule[random.randint(0,25)])
 
-  def selection_caracteres_speciaux() :
+  def _selection_caracteres_speciaux() :
       mdp.append(caracteres_speciaux[random.randint(0,len(caracteres_speciaux)-1)])
 
 
@@ -28,11 +28,11 @@ def random_generation(longueur_mdp):
       choix = random.randint(0,3)
       match choix:
           case 0:
-             selection_majuscule()
+             _selection_majuscule()
           case 1:
-             selection_minuscule()
+             _selection_minuscule()
           case 2:
-             selection_caracteres_speciaux()
+             _selection_caracteres_speciaux()
           case 3:
              mdp.append(str(random.randint(0,10)))
 

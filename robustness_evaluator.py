@@ -1,11 +1,11 @@
 import random
 import string
+#v0.3
 
 
 
-
-def evaluation_de_robustesse(mot_de_passe): #calcul le score de robustesse sur la base de la diversité (True ou False) et si le mot de passe contient plus de 8 caractères.
-    #calcul de la diversité sur le base des caracètres spéciaux
+def evaluation_de_robustesse(mot_de_passe: str)->int:
+    """Public API: return the estimated robustness score"""
     presence_minuscule = False
     presence_majuscule = False
     presence_nombre = False
@@ -39,9 +39,9 @@ def evaluation_de_robustesse(mot_de_passe): #calcul le score de robustesse sur l
     #calcul du score de robustesse :
     if diversity == True and longueur_securite == True :
         score_robustesse = 3
-    elif diversity == False or longueur_securite == False :
-        score_robustesse = 2
-    elif diversity == False and longueur_securite == False:
+    elif diversity == False and longueur_securite == False :
         score_robustesse = 1
+    elif diversity == False or longueur_securite == False:
+        score_robustesse = 2
     
     return(score_robustesse)
