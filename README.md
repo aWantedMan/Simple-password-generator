@@ -8,7 +8,7 @@ and security-related reasoning.
 The goal is not to provide a production-ready security tool,
 but to iteratively build and improve a coherent project.
 
-All content below refers to the v0.2 :
+All content below refers to the v0.3 :
 
 ## Current Features:
 
