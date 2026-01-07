@@ -55,7 +55,7 @@ This repository serves as a portfolio project to demonstrate:
 This project is versioned using Git tags.
 
 - `v0.1` — first working prototype
-- `v0.2` — functional password generator
-- `v0.3` — Command-based UI, standardized docstring, extensible architecture
+- `v0.2` — functional password generator, seperation of features in module
+- `v0.3` — Command-based UI, standardized docstring, extensible main architecture
 
 Older versions can be accessed via GitHub tags.
